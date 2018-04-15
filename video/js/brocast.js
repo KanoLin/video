@@ -1,4 +1,4 @@
-var socket = new WebSocket("ws://172.21.160.99:3000");
+var socket = new WebSocket("ws://EXAMPLE_URL:EXAMPLE_PORT");
 
 socket.onopen = function(){
 	console.log("connect succeed");
@@ -65,7 +65,7 @@ $(function(){
 		}
 	})
 	$('.right').click(function(){
-		var url = "http://172.21.160.99/video/logn.html?action=";
+		var url = "../logn.html?action=";
 		if($(this).text()=="注册") url += "b";
 		else if($(this).text()=="登陆")  url += "a";
 			 else {
