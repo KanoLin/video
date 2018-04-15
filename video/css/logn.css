@@ -1,0 +1,147 @@
+#head-pic{
+	width: 24%;
+	margin:120px auto 0;
+    display: block;
+}
+div{
+	font-family:SimHei , serif , Sans-serif ;
+}
+div[class |= but]{
+	width: 67%;
+    height: 45px;
+    margin: 0 auto 20px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 18px;
+    border: 2px solid #ff7272;
+    border-radius: 25px;
+}
+div[class |= but]:active,div#first div[class |=but]{
+	background:white;
+	color:#ff7272;
+}
+div[class |= but],div#first div[class |=but]:active{
+	background:#ff7272;
+	color:white;
+}
+div[class=but-up]{
+	margin:0 auto 28.4px;
+}
+span{
+	display:block;
+	color:#747272;
+	font-size:16px;	
+}
+#first span:nth-child(3){
+	text-decoration:underline;
+	margin:0 0 83px ;
+	text-align:center;
+}
+#footer span:nth-child(1){
+	margin:0 0 28px ;
+	text-align:center;
+}
+#footer{
+	width:60%;
+	margin:0 auto;
+}
+div#footer img{
+	width:50px;
+	margin:0;
+}
+div#footer img:nth-of-type(1){
+	float:left;
+}
+div#footer img:nth-of-type(3){
+	margin: 0 auto;
+    display: block;
+}
+div#footer img:nth-of-type(2){
+	float:right;
+}
+input[type=text],input[type=password]{
+	display:block;
+	width:63%;
+	font-size:16px;
+	color:black;
+	outline:none;
+	padding-left:4px;
+	height:30px;
+	line-height:30px;
+}
+#second>input[type=text],#second>input[type=password]{
+	border:0px solid #ff7272;
+	border-bottom: 2px solid #ff7272;
+	margin:0 auto 15px;
+}
+#third>input[type=text],#third>input[type=password]{
+	border:2px solid #ff7272;
+	border-radius:10px;
+	margin:0 auto 20px;
+}
+.choice{
+	width:63%;
+	margin:10px auto;
+}
+.choice span:nth-of-type(1){
+	float:left;
+}
+.choice span:nth-of-type(2){
+	float:right;
+}
+.read span,.agree span{
+	display:inline;
+}
+.read span:nth-child(2),.agree span:nth-child(3){
+	color:#ff7272;
+	text-decoration:underline;
+}
+.read{
+	clear:both;
+	width:100%;
+	margin:150px auto 0;
+	text-align:center;
+}
+.agree{
+	width:63%;
+	margin:0 auto 20px;
+}
+#first,#second{margin-top: 55px;}
+#third{margin-top:20px;}
+#third>span{
+	text-align:center;
+	margin-top:-10px;
+	margin-bottom:30px;
+}
+
+#stage{
+	position:absolute;
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
+	background:rgba(255, 255, 255, 0.92);
+}
+.close{
+    position: relative;
+    top: 0;
+    left: 100%;
+    transform: translateX(-100%);
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    font-size: 25px;
+    border: 2px solid black;
+    text-align: center;
+    border-radius: 30px;
+}
+#content{
+	position:relative;
+	height:100px;
+	width:63%;
+	text-align:center;
+	top:50%;
+	left:50%;
+	transform:translateX(-50%) translateY(-50%);
+}
+#second,#third{display:none;}
