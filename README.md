@@ -9,3 +9,5 @@
 
 webSocket服务器端可选择运行php版和node.js版，server.php为林子健编写，wsServer.js为陈嘉奖编写
 注：php版请确保服务器安装swoole扩展。
+
+配置到服务器后，请先运行build.php建立用户数据库，再保持运行websocket服务器端文件
