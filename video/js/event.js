@@ -11,7 +11,7 @@ function showMsg(type,msg){
 		$('<div id="stage"><div id="content">'+'登录成功<br>正在跳转中'+
 			'</div><div class="close">X</div></div>').appendTo($('body'));
 		document.cookie = "user="+ msg.username;
-		setTimeout("window.location.href = '../index.html'",1000);
+		setTimeout("window.location.href = './index.html'",1000);
 	} else{
 		$('<div id="stage"><div id="content">'+'注册成功<br>跳转至登录界面'+
 			'</div><div class="close">X</div></div>').appendTo($('body'));
@@ -71,7 +71,7 @@ $(function(){
 	})
 	
 	$('#first>span').click(function(){
-		window.location.href = '../index.html';
+		window.location.href = './index.html';
 	})
 	
 	$('#second .choice>span:nth-child(2)').click(function(){

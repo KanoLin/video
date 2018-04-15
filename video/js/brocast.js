@@ -65,7 +65,7 @@ $(function(){
 		}
 	})
 	$('.right').click(function(){
-		var url = "../logn.html?action=";
+		var url = "./logn.html?action=";
 		if($(this).text()=="注册") url += "b";
 		else if($(this).text()=="登陆")  url += "a";
 			 else {
