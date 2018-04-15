@@ -36,8 +36,9 @@ function getCookie(){
     }    
 }
 function toggleUser(username){
-	if(!($('.right:visibled'.length == 2 && !username)))  //when username =='' && 初始登录注册界面,这不toggle
+	if(!($('.right:visible').length == 2 && !username))  //when username =='' && 初始登录注册界面,这不toggle
 		$('.right').toggle();
+	console.log(username);
 	if(username)		//用户名存在
 		$('#header').append($('<li>'+username+'</li><img src="./img/head.png" id="head">'));
 	else{
