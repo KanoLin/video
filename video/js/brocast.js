@@ -1,3 +1,4 @@
+
 var socket = new WebSocket("ws://EXAMPLE_URL:EXAMPLE_PORT");
 
 socket.onopen = function(){
@@ -38,21 +39,24 @@ function getCookie(){
 function toggleUser(username){
 	if(!($('.right:visible').length == 2 && !username))  //when username =='' && 初始登录注册界面,这不toggle
 		$('.right').toggle();
-	console.log(username);
-	if(username)		//用户名存在
+	$input = $('input').eq(0);
+	if(username){		//用户名存在
 		$('#header').append($('<li>'+username+'</li><img src="./img/head.png" id="head">'));
+		$input.attr('placeholder','输入你想发送的弹幕吧').removeAttr('disabled');
+	}
 	else{
 		$('#header li').remove();
 		$('#head').remove();
+		$input.attr({'placeholder':'请先登录后才能发弹幕','disabled':'disabled'});
 	}
 }
 $(function(){
 	var username = getCookie();
 	toggleUser(username);
 	$('#btn-sendMsg').click(function(){
-		if(!username) console.log('请先登录后才能发弹幕');
-		else {
-			$textarea = $('input').eq(0);
+		username = getCookie();
+		$textarea = $('input').eq(0);
+		if(username) {
 			var txt = $textarea.val();
 			if(txt){
 				var msg = {};
