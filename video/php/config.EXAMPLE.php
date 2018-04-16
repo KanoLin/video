@@ -8,5 +8,6 @@
     //webSocket服务器
     $wsurl='EXAMPLE_URL';        //webSocket监听地址
     $port=3000;                  //监听端口号为数值型
-
+    //过滤词文件
+    $filename="chinese_dictionary.txt";
 ?>
